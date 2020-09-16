@@ -1,0 +1,96 @@
+%\documentclass[a4paper,twoside,11pt]{report}
+\documentclass[a4paper,oneside,12pt,openany]{book}
+\usepackage{style/aims}
+%\usepackage{draftcopy}
+
+\usepackage[paperwidth=8in, paperheight=11.62in]{geometry}
+\usepackage{amssymb}% Maths symbols
+\usepackage{graphicx}% Include figure files
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx}
+\usepackage{xcolor}
+\usepackage{float}
+%\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage[dvips]{graphicx,color}
+%\usepackage{feynmf}		%Package for feynman diagrams.
+%\usepackage{epsfig}% Include figure files
+%\usepackage{ifthen}
+%\usepackage{verbatim}
+\usepackage{rotating}
+\usepackage{slashbox}
+
+%\nofiles
+%\usepackage[labelfont=bf]{caption}
+\usepackage{subfig}
+
+\newcommand{\twocol}{false}
+\linespread{1.6}
+
+%don't use \text{} use \mathrm{}
+
+\pagestyle{headings}
+%\documentclass{book}
+
+
+\usepackage{color,graphicx}
+\usepackage[pdftex]{hyperref}
+
+\begin{document}
+\frontmatter
+
+%\title{This is my thesis -  \textbf{(DRAFT ver 04)}}
+%\author{UJ Student}
+%\affiliation{University of Johannesburg, Johannesburg, South Africa}
+%\date{\today}
+%\maketitle
+
+\input{titlepage}
+%\input{declaration}
+%\input{abstract}
+%\input{acknowledgements}
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+\mainmatter
+
+\input{introduction}
+
+%\input{LITERATURE REVIEW AND WORK PLAN}
+
+
+\input{literatureMinPET}
+
+\input{problemstatementMinPET}
+
+%\input{equilibration}
+\input{MethodologyMinPET}
+\input{ThestudyofKimberlitesrocksMinPET}
+
+%\input{Disscussion}
+
+\input{LowdoseradiationdamageMinPET}
+
+\input{TheMinPETDetectors}
+
+\input{discussionMinPET}
+%\input{imp}
+
+%\appendix
+
+%\linespread{1.3}
+%\input{authors_thesis}
+%\input{publications}
+%\input{cstables}
+
+\bibliography{S11paper}
+%\bibliography{sbook112}
+%\bibliographystyle{plain}   %alphabetical with numbers
+%\bibliographystyle{amsalpha}  %alphabetical three letters and two date numerals
+%\bibliographystyle{apalike}  %full names and date
+\bibliographystyle{unsrt}
+
+\end{document}
